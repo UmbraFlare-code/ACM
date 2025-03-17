@@ -37,9 +37,13 @@ Web Gaming
 ```
 
 ## 📸 Vistas Previas
-
+> 
 > Capturas de pantalla del proyecto:
+> 
+1. *Sección principal con tema cósmico*
+![Hero Section](public/imagenes/hero.jpg)
 
+<<<<<<< HEAD
 1. *Sección principal con tema cósmico*
 ![Hero Section](public/imagenes/hero.jpg)
 
@@ -52,7 +56,6 @@ Web Gaming
 4. *Premiaciones de los integrantes de ACM*
 ![Premiaciones](public/imagenes/premiaciones.jpg)
    
-
 ## 🛠 Technical Stack
 
 - **Frontend**: React.js
