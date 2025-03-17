@@ -1,0 +1,10 @@
+{
+  "title": "Gaming Fest ACM",
+  "subtitle": "Primer Torne de Gaming UC",
+  "date": "12-13 de Julio, 2024",
+  "modality": "Virtual",
+  "buttons": [
+    { "text": "Eventos", "type": "primary" },
+    { "text": "Saber Más", "type": "outline" }
+  ]
+}

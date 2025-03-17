@@ -1,0 +1,181 @@
+.premios-section {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.cosmic-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    url('/images/nebula.png'),
+    radial-gradient(circle at 30% 50%, rgba(67, 97, 238, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(76, 201, 240, 0.15) 0%, transparent 50%);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.premios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.premio-card {
+  background: rgba(11, 14, 45, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(67, 97, 238, 0.3);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.premio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.premio-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.premio-icon {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.premio-fecha {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.premio-imagen {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.premio-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.participantes-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: var(--accent);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modal-content {
+  background: rgba(11, 14, 45, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 900px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.modal-fecha {
+  color: var(--accent);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.participantes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.participante-card {
+  text-align: center;
+}
+
+.participante-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--accent);
+}
+
+.participante-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.participante-rol {
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.participante-logro {
+  color: var(--light);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .premios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .participantes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}

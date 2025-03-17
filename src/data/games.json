@@ -1,0 +1,70 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "DOTA 2",
+      "image": "/imagenes/dota2.png",
+      "description": "Compite en dos emocionantes categorías: Maestros de la Batalla y Titanes del Trono en un emocionante torneo de DOTA 2.",
+      "prizePool": "Hasta S/. 150",
+      "teamSize": "5v5 + 2 suplentes",
+      "registrationFees": {
+        "titular": "S/. 5",
+        "suplente": "S/. 2",
+        "requirements": [
+          "Mínimo 2 estudiantes actuales de la Universidad Continental por equipo",
+          "El líder del equipo debe usar correo institucional para el registro",
+          "Los jugadores solo pueden unirse a un equipo y categoría",
+          "Los jugadores individuales pueden unirse a través de Discord"
+        ]
+      },
+      "date": "12 de Julio, 2024",
+      "registrationLink": "#",
+      "rulesLink": "#",
+      "categories": [
+        {
+          "name": "Titanes del Trono",
+          "rank": "Ancestral - Inmortal",
+          "prize": "S/. 150"
+        },
+        {
+          "name": "Maestros de la Batalla",
+          "rank": "Heraldo - Arconte",
+          "prize": "S/. 90"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "valorant",
+      "image": "/imagenes/valorant.png",
+      "description": "",
+      "prizePool": "",
+      "teamSize": "5v5 + 2 suplentes",
+      "registrationFees": {
+        "titular": "S/. 5",
+        "suplente": "S/. 2",
+        "requirements": [
+          "Mínimo 2 estudiantes actuales de la Universidad Continental por equipo",
+          "El líder del equipo debe usar correo institucional para el registro",
+          "Los jugadores solo pueden unirse a un equipo y categoría",
+          "Los jugadores individuales pueden unirse a través de Discord"
+        ]
+      },
+      "date": "12 de Julio, 2024",
+      "registrationLink": "#",
+      "rulesLink": "#",
+      "categories": [
+        {
+          "name": "Titanes del Trono",
+          "rank": "",
+          "prize": ""
+        },
+        {
+          "name": "Maestros de la Batalla",
+          "rank": "",
+          "prize": ""
+        }
+      ]
+    }
+  ]
+}

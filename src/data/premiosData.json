@@ -1,0 +1,85 @@
+{
+  "premios": [
+    {
+      "id": 1,
+      "titulo": "ICPC México 2023",
+      "fecha": "Noviembre 2023",
+      "imagen": "/images/awards/icpc-2023.jpg",
+      "descripcion": "Competencia regional de programación ICPC donde nuestros equipos alcanzaron el podio nacional, demostrando excelente trabajo en equipo y resolución de problemas algorítmicos complejos.",
+      "participantes": [
+        {
+          "nombre": "Carlos Mendoza",
+          "rol": "Capitán de Equipo",
+          "foto": "/images/participants/carlos.jpg",
+          "logro": "Resolución de 8 problemas algorítmicos"
+        },
+        {
+          "nombre": "Ana Martínez",
+          "rol": "Estratega Principal",
+          "foto": "/images/participants/ana.jpg",
+          "logro": "Mejor tiempo de optimización"
+        },
+        {
+          "nombre": "Diego Ramírez",
+          "rol": "Desarrollador",
+          "foto": "/images/participants/diego.jpg",
+          "logro": "Especialista en estructuras de datos"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "ACM Contest Regional 2023",
+      "fecha": "Septiembre 2023",
+      "imagen": "/images/awards/acm-regional-2023.jpg",
+      "descripcion": "Primera plaza en la competencia regional ACM, destacando en problemas de optimización y algoritmos avanzados. El equipo demostró excelente coordinación y estrategia.",
+      "participantes": [
+        {
+          "nombre": "Laura Sánchez",
+          "rol": "Líder Técnico",
+          "foto": "/images/participants/laura.jpg",
+          "logro": "Mejor solución en problemas de grafos"
+        },
+        {
+          "nombre": "Miguel Torres",
+          "rol": "Programador Principal",
+          "foto": "/images/participants/miguel.jpg",
+          "logro": "Optimización de algoritmos complejos"
+        },
+        {
+          "nombre": "Sofia Vega",
+          "rol": "Analista de Problemas",
+          "foto": "/images/participants/sofia.jpg",
+          "logro": "Estrategia de resolución eficiente"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Hackathon ACM 2023",
+      "fecha": "Julio 2023",
+      "imagen": "/images/awards/hackathon-2023.jpg",
+      "descripcion": "Primer lugar en el Hackathon ACM 2023, desarrollando una solución innovadora para problemas de sostenibilidad urbana utilizando IA y análisis de datos en tiempo real.",
+      "participantes": [
+        {
+          "nombre": "Roberto Méndez",
+          "rol": "Arquitecto de Software",
+          "foto": "/images/participants/roberto.jpg",
+          "logro": "Diseño de arquitectura escalable"
+        },
+        {
+          "nombre": "Carmen Ortiz",
+          "rol": "Desarrolladora FullStack",
+          "foto": "/images/participants/carmen.jpg",
+          "logro": "Implementación de IA"
+        },
+        {
+          "nombre": "Juan Pablo García",
+          "rol": "Especialista en Datos",
+          "foto": "/images/participants/juan.jpg",
+          "logro": "Análisis de datos en tiempo real"
+        }
+      ]
+    }
+  ]
+}

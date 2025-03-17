@@ -1,0 +1,40 @@
+{
+  "sections": [
+    {
+      "title": "Sobre Nosotros",
+      "content": "ACM Continental es una comunidad dedicada a promover la innovación y el desarrollo profesional en tecnología."
+    },
+    {
+      "title": "Enlaces Rápidos",
+      "links": [
+        { "text": "Inicio", "url": "#home" },
+        { "text": "Eventos", "url": "#games" },
+        { "text": "Cronograma", "url": "#schedule" },
+        { "text": "Sobre ACM", "url": "#about" }
+      ]
+    },
+    {
+      "title": "Contacto",
+      "content": "¿Tienes preguntas? Únete a nuestro Discord o síguenos en redes sociales."
+    }
+  ],
+  "socialLinks": {
+    "youtube": {
+      "url": "https://youtube.com/@acmcontinental-sistemas",
+      "label": "ACM Continental Sistemas"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/acmsistemas2",
+      "label": "ACM Sistemas"
+    },
+    "tiktok": {
+      "url": "https://www.tiktok.com/@acmconti",
+      "label": "ACM Conti"
+    },
+    "github": {
+      "url": "https://github.com/ACMContinental",
+      "label": "ACM Continental"
+    }
+  },
+  "copyright": "© 2024 ACM Continental. Todos los derechos reservados."
+}

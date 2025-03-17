@@ -1,0 +1,22 @@
+{
+  "categories": [
+    {
+      "title": "Maestros de la Batalla",
+      "icon": "trophy",
+      "prizePool": "S/. 90",
+      "rewards": [
+        "Tarjetas Steam o S/. 75 en Tarjetas Steam + Accesorios ACM",
+        "Diploma Digital de Reconocimiento"
+      ]
+    },
+    {
+      "title": "Titanes del Trono",
+      "icon": "crown",
+      "prizePool": "S/. 150",
+      "rewards": [
+        "Efectivo o Tarjetas Steam",
+        "Diploma Digital de Reconocimiento"
+      ]
+    }
+  ]
+}

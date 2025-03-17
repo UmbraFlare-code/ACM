@@ -1,0 +1,36 @@
+{
+  "title": "Cronograma del Evento",
+  "subtitle": "Marca tu calendario para estos emocionantes encuentros",
+  "days": [
+    {
+      "date": "12 de Julio, 2024",
+      "events": [
+        {
+          "time": "10:00 AM",
+          "title": "Ceremonia de Apertura",
+          "description": "Discurso de bienvenida y descripción general del torneo"
+        },
+        {
+          "time": "11:00 AM",
+          "title": "DOTA 2 - Fase de Grupos",
+          "description": "Comienzan las primeras rondas de partidas"
+        }
+      ]
+    },
+    {
+      "date": "13 de Julio, 2024",
+      "events": [
+        {
+          "time": "2:00 PM",
+          "title": "Finales",
+          "description": "Partidas de campeonato en todas las categorías"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "Ceremonia de Premiación",
+          "description": "Distribución de premios y ceremonia de clausura"
+        }
+      ]
+    }
+  ]
+}

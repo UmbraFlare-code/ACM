@@ -1,0 +1,17 @@
+{
+  "title": "Sobre ACM",
+  "subtitle": "Elevando las ideas innovadoras y sueños a nuevas alturas",
+  "mainText": "Somos la comunidad que impulsa la pasión por la tecnología y la innovación en la Universidad Continental. Aquí, las ideas se convierten en proyectos, los sueños en realidades, y cada desafío es una oportunidad para crecer. Únete a nosotros y sé parte de una red que transforma el futuro, un código a la vez.",
+  "features": [
+    {
+      "icon": "trophy",
+      "title": "Competencia Profesional",
+      "description": "Participa en competencias y proyectos que desafían tus habilidades y te preparan para el mundo profesional"
+    },
+    {
+      "icon": "users",
+      "title": "Enfoque Comunitario",
+      "description": "Únete a una familia donde tus hermanos mayores te guían y apoyan en tu desarrollo profesional y personal"
+    }
+  ]
+}

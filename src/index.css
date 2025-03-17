@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #4361EE;
+  --secondary: #3A0CA3;
+  --accent: #4CC9F0;
+  --dark: #0B0E2D;
+  --darker: #060818;
+  --light: #F8F9FA;
+  --star: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: var(--darker);
+  color: var(--light);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 20% 35%, rgba(67, 97, 238, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 75% 65%, rgba(76, 201, 240, 0.1) 0%, transparent 50%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
