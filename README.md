@@ -174,10 +174,12 @@ We welcome contributions from the ACM community! Please follow these steps:
 ## 📞 Contact
 For more information about the tournament or technical support:
 
-- Discord: [ACM Continental Server]
-- Email: [Contact email]
-- Instagram: @acmsistemas2
+- 🎥 [YouTube](https://youtube.com/@acmcontinental-sistemas) - ACM Continental Sistemas
+- 📸 [Instagram](https://www.instagram.com/acmsistemas2) - ACM Sistemas
+- 🎵 [TikTok](https://www.tiktok.com/@acmconti) - ACM Conti
+- 💻 [GitHub](https://github.com/ACMContinental) - ACM Continental
+
 ## 📄 License
-This project is licensed under the [License Type] - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 Made with ❤️ by ACM Continental Systems
