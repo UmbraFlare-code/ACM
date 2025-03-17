@@ -1,6 +1,37 @@
-# ACM Gaming Fest Website
+# ACM Gaming Fest Website 🎮
 
-A dynamic and interactive website for the ACM Gaming Tournament, featuring a cosmic theme and responsive design.
+![ACM Gaming Banner](suggested_banner.jpg)
+> A dynamic and interactive website for the ACM Gaming Tournament, featuring a cosmic theme and responsive design.
+
+## 👥 About Us
+
+ACM Continental is a student chapter dedicated to promoting technology and innovation at Universidad Continental. Our gaming division focuses on creating engaging competitive experiences for students while fostering professional development.
+
+### Our Team
+- **Tournament Organizers**: ACM Continental Gaming Division
+- **Development Team**: ACM Continental Systems
+- **Support**: Universidad Continental
+
+### Connect With Us
+- 🎥 [YouTube](https://youtube.com/@acmcontinental-sistemas)
+- 📸 [Instagram](https://www.instagram.com/acmsistemas2)
+- 🎵 [TikTok](https://www.tiktok.com/@acmconti)
+- 💻 [GitHub](https://github.com/ACMContinental)
+
+## 🎯 Project Overview
+
+### Purpose
+Creating an immersive platform for our gaming tournaments that combines:
+- Professional competition environment
+- Community engagement
+- Academic excellence
+- Technical skill development
+
+### Target Audience
+- University Continental students
+- Gaming enthusiasts
+- Tech community members
+- Esports competitors
 
 ## 🎮 Features
 
@@ -105,11 +136,48 @@ A dynamic and interactive website for the ACM Gaming Tournament, featuring a cos
 - Mobile phones
 - Different screen sizes
 
+## 📸 Screenshot Previews
+
+> Suggested screenshots to add:
+
+1. `home-hero.jpg` - Hero section with cosmic theme
+2. `games-showcase.jpg` - Tournament games display
+3. `schedule-timeline.jpg` - Event schedule interface
+4. `mobile-responsive.jpg` - Mobile view demonstration
+
+## 🛠 Technical Stack
+
+- **Frontend**: React.js
+- **Styling**: CSS3 with custom animations
+- **Icons**: React Icons
+- **Deployment**: [Platform details]
+
 ## 🔧 Setup and Installation
 
-1. Clone the repository
+1. Clone the repository:
+```bash
+git clone https://github.com/UmbraFlare-code/web-gaming.git
+```
 2. Install dependencies:
 ```bash
 npm install
 ```
-"# web-gaming" 
+"# web-gaming"
+## 🤝 Contributing
+We welcome contributions from the ACM community! Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+## 📞 Contact
+For more information about the tournament or technical support:
+
+- Discord: [ACM Continental Server]
+- Email: [Contact email]
+- Instagram: @acmsistemas2
+## 📄 License
+This project is licensed under the [License Type] - see the LICENSE.md file for details.
+
+Made with ❤️ by ACM Continental Systems
