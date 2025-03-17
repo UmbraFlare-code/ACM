@@ -34,7 +34,7 @@ Creating an immersive platform for our gaming tournaments that combines:
 - Esports competitors
 
 ## 🎮 Features
-´´plaintext
+```plaintext
 Web Gaming
 ├── public
 │   └── imagenes
@@ -83,7 +83,7 @@ Web Gaming
     │
     ├── App.jsx
     └── main.jsx
-´´
+```
 
 ## 📸 Screenshot Previews
 
