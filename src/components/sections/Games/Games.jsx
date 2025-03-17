@@ -124,7 +124,7 @@ const Games = () => {
                       includeMargin={false}
                       style={{ width: '100%', height: '80%' }}
                     />
-                    <p className="qr-text">Yape</p>
+                    <p className="qr-text">Yapea y Registrate</p>
                   </div>
                 )}
               </div>

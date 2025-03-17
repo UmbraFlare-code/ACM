@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
-import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
-import Hero from './components/sections/Hero'
-import Games from './components/sections/Games'
-import Schedule from './components/sections/Schedule'
-import Prizes from './components/sections/Premios/Premios'
-import About from './components/sections/About'
+import Navbar from './components/layout/Navbar/Navbar.jsx'
+import Footer from './components/layout/Footer/Footer.jsx'
+import Hero from './components/sections/Hero/Hero.jsx'
+import Games from './components/sections/Games/Games.jsx'
+import Schedule from './components/sections/Schedule/Schedule.jsx'
+import Prizes from './components/sections/Premios/Premios.jsx'
+import About from './components/sections/About/About.jsx'
 import './App.css'
 
 function App() {
