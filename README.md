@@ -1,39 +1,17 @@
-# ACM Gaming Fest Website 🎮
+# Sitio Web ACM Gaming Fest 🎮
+Banner ACM Gaming
 
-![ACM Gaming Banner](suggested_banner.jpg)
-> A dynamic and interactive website for the ACM Gaming Tournament, featuring a cosmic theme and responsive design.
+## 👥 Sobre Nosotros
 
-## 👥 About Us
+ACM Continental es un capítulo estudiantil dedicado a promover la tecnología e innovación en la Universidad Continental. Nuestra división de gaming se enfoca en crear experiencias competitivas atractivas para estudiantes mientras fomenta el desarrollo profesional.
 
-ACM Continental is a student chapter dedicated to promoting technology and innovation at Universidad Continental. Our gaming division focuses on creating engaging competitive experiences for students while fostering professional development.
-
-### Our Team
-- **Tournament Organizers**: ACM Continental Gaming Division
-- **Development Team**: ACM Continental Systems
-- **Support**: Universidad Continental
-
-### Connect With Us
+### Conéctate con Nosotros
 - 🎥 [YouTube](https://youtube.com/@acmcontinental-sistemas)
 - 📸 [Instagram](https://www.instagram.com/acmsistemas2)
 - 🎵 [TikTok](https://www.tiktok.com/@acmconti)
 - 💻 [GitHub](https://github.com/ACMContinental)
 
-## 🎯 Project Overview
-
-### Purpose
-Creating an immersive platform for our gaming tournaments that combines:
-- Professional competition environment
-- Community engagement
-- Academic excellence
-- Technical skill development
-
-### Target Audience
-- University Continental students
-- Gaming enthusiasts
-- Tech community members
-- Esports competitors
-
-## 🎮 Features
+## 🎮 Estructura del Proyecto
 ```plaintext
 Web Gaming
 ├───public
@@ -58,14 +36,21 @@ Web Gaming
         └───Schedule
 ```
 
-## 📸 Screenshot Previews
+## 📸 Vistas Previas
 
-> Suggested screenshots to add:
+> Capturas de pantalla del proyecto:
 
-1. `home-hero.jpg` - Hero section with cosmic theme
-2. `games-showcase.jpg` - Tournament games display
-3. `schedule-timeline.jpg` - Event schedule interface
-4. `mobile-responsive.jpg` - Mobile view demonstration
+1. ![Hero Section](public/imagenes/hero.jpg)
+   *Sección principal con tema cósmico*
+
+2. ![Eventos ACM](public/imagenes/eventos.jpg)
+   *Muestra los próximos eventos de ACM*
+
+3. ![Cronograma](public/imagenes/cronograma.jpg)
+   *Interfaz de cronograma de eventos*
+
+4. ![Premiaciones](public/imagenes/premiaciones.jpg)
+   *Premiaciones de los integrantes de ACM*
 
 ## 🛠 Technical Stack
 
@@ -84,7 +69,6 @@ git clone https://github.com/UmbraFlare-code/web-gaming.git
 ```bash
 npm install
 ```
-"# web-gaming"
 ## 🤝 Contributing
 We welcome contributions from the ACM community! Please follow these steps:
 
@@ -96,7 +80,6 @@ We welcome contributions from the ACM community! Please follow these steps:
 ## 📞 Contact
 For more information about the tournament or technical support:
 
-<<<<<<< HEAD
 - 🎥 [YouTube](https://youtube.com/@acmcontinental-sistemas) - ACM Continental Sistemas
 - 📸 [Instagram](https://www.instagram.com/acmsistemas2) - ACM Sistemas
 - 🎵 [TikTok](https://www.tiktok.com/@acmconti) - ACM Conti
@@ -104,5 +87,3 @@ For more information about the tournament or technical support:
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-Made with ❤️ by ACM Continental Systems
