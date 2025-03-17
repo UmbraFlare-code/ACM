@@ -36,53 +36,26 @@ Creating an immersive platform for our gaming tournaments that combines:
 ## 🎮 Features
 ```plaintext
 Web Gaming
-├── public
-│   └── imagenes
-│
-└── src
-    ├── components
-    │   ├── common
-    │   │   ├── Button
-    │   │   ├── Card
-    │   │   └── Modal
-    │   │
-    │   ├── Header
-    │   │   ├── index.jsx
-    │   │   └── Header.css
-    │   │
-    │   ├── Games
-    │   │   ├── GameCard
-    │   │   ├── GameDetails
-    │   │   ├── index.jsx
-    │   │   └── Games.css
-    │   │
-    │   ├── Schedule
-    │   │   ├── TimelineDay
-    │   │   │   └── index.jsx
-    │   │   ├── EventCard
-    │   │   │   └── index.jsx
-    │   │   ├── index.jsx
-    │   │   └── Schedule.css
-    │   │
-    │   ├── Prizes
-    │   │   ├── index.jsx
-    │   │   └── Prizes.css
-    │   │
-    │   └── Footer
-    │       ├── index.jsx
-    │       └── Footer.css
-    │
-    ├── styles
-    │   ├── global.css
-    │   └── variables.css
-    │
-    ├── data
-    │   ├── games.json
-    │   ├── schedule.json
-    │   └── footer.json
-    │
-    ├── App.jsx
-    └── main.jsx
+├───public
+│   └───imagenes
+└───src
+    ├───assets
+    ├───components
+    │   ├───common
+    │   ├───layout
+    │   │   ├───Footer
+    │   │   └───Navbar
+    │   └───sections
+    │       ├───About
+    │       ├───Games
+    │       ├───Hero
+    │       ├───Premios
+    │       └───Schedule
+    └───data
+        ├───Games
+        ├───Hero
+        ├───Premios
+        └───Schedule
 ```
 
 ## 📸 Screenshot Previews
