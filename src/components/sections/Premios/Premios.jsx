@@ -12,7 +12,7 @@ const Premios = () => {
   const cerrarModal = () => setSelectedAward(null);
 
   return (
-    <section className="premios-section">
+    <section className="premios-section" id="prizes">
       <div className="cosmic-bg"></div>
       <div className="container">
         <div className="section-header">
