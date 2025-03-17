@@ -18,6 +18,14 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId, e) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} aria-label="Navegación principal">
       <div className="container navbar-container">
@@ -27,19 +35,19 @@ const Navbar = () => {
         </div>
         
         <div className="navbar-links">
-          <a href="#home" className="navbar-link" aria-label="Ir a inicio">
+          <a href="#home" className="navbar-link" aria-label="Ir a inicio" onClick={(e) => scrollToSection('home', e)}>
             <FaGamepad /> Inicio
           </a>
-          <a href="#games" className="navbar-link" aria-label="Ver juegos">
+          <a href="#games" className="navbar-link" aria-label="Ver juegos" onClick={(e) => scrollToSection('games', e)}>
             <FaGamepad /> Eventos
           </a>
-          <a href="#schedule" className="navbar-link" aria-label="Ver cronograma">
+          <a href="#schedule" className="navbar-link" aria-label="Ver cronograma" onClick={(e) => scrollToSection('schedule', e)}>
             <FaCalendarAlt /> Cronograma
           </a>
-          <a href="#prizes" className="navbar-link" aria-label="Ver premios">
+          <a href="#prizes" className="navbar-link" aria-label="Ver premios" onClick={(e) => scrollToSection('prizes', e)}>
             <FaTrophy /> Premios
           </a>
-          <a href="#about" className="navbar-link" aria-label="Sobre nosotros">
+          <a href="#about" className="navbar-link" aria-label="Sobre nosotros" onClick={(e) => scrollToSection('about', e)}>
             <FaInfoCircle /> Nosotros
           </a>
         </div>
