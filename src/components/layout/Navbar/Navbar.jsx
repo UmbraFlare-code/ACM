@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} aria-label="Navegación principal">
       <div className="container navbar-container">
         <div className="navbar-logo">
-          <img src="/public/imagenes/acm-logo.webp" alt="Logo de ACM" className="acm-logo" />
+          <img src="/acm-logo.webp" alt="Logo de ACM" className="acm-logo" />
           <span>Gaming fest ACM</span>
         </div>
         
