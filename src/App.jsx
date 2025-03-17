@@ -11,6 +11,7 @@ import './App.css'
 function App() {
   useEffect(() => {
     const createStars = () => {
+      // This DOM manipulation might be causing issues
       const app = document.querySelector('.app');
       const starCount = 100;
       
