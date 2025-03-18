@@ -44,25 +44,25 @@
           "nombre": "Max Fravel Urquizo Oré",
           "rol": "Programador",
           "foto": "/images/participants/carlos.jpg",
-          "logro": ""
+          "logro": "a"
         },
         {
           "nombre": "Rafael Javier Romero Flores",
           "rol": "Programador",
           "foto": "/images/participants/ana.jpg",
-          "logro": ""
+          "logro": "a"
         },
         {
           "nombre": "Daniel Andy Encizo Suarez",
           "rol": "Programador",
           "foto": "/images/participants/diego.jpg",
-          "logro": ""
+          "logro": "a"
         },
         {
           "nombre": "Jocabed Isabel Ferruzo Izquierdo",
           "rol": "Diseñador",
           "foto": "/images/participants/diego.jpg",
-          "logro": ""
+          "logro": "a"
         }
       ]
     }
