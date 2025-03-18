@@ -1,7 +1,9 @@
 import { FaTrophy, FaUsers } from 'react-icons/fa';
 import React from 'react';
 
-const PremioCard = React.memo(({ premio, onSelect }) => {
+const PremioCard = React.memo(({ premio, onSelect, totalCards }) => {
+  const imageClass = totalCards <= 2 ? 'premio-imagen premio-imagen-large' : 'premio-imagen';
+  
   return (
     <div 
       className="premio-card"
@@ -13,8 +15,12 @@ const PremioCard = React.memo(({ premio, onSelect }) => {
         <span className="premio-fecha">{premio.fecha}</span>
       </div>
 
-      <div className="premio-imagen">
-        <img src={premio.imagen} alt={premio.titulo} loading="lazy" />
+      <div className={imageClass}>
+        <img 
+          src={premio.imagen} 
+          alt={premio.titulo} 
+          loading="lazy"
+        />
       </div>
 
       <div className="premio-contenido">

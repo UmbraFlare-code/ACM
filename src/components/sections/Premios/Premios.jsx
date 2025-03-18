@@ -42,6 +42,7 @@ const Premios = () => {
               key={premio.id}
               premio={premio}
               onSelect={handleSelectAward}
+              totalCards={premios.length}
             />
           ))}
         </div>

@@ -232,3 +232,12 @@
     height: 50%;
   }
 }
+.premio-imagen-large {
+  height: 400px;  /* Increased from default 200px */
+}
+
+@media (max-width: 768px) {
+  .premio-imagen-large {
+    height: 250px;
+  }
+}

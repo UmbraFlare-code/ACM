@@ -35,55 +35,34 @@
     },
     {
       "id": 2,
-      "titulo": "ACM Contest Regional 2023",
-      "fecha": "Septiembre 2023",
-      "imagen": "/images/awards/acm-regional-2023.jpg",
-      "descripcion": "Primera plaza en la competencia regional ACM, destacando en problemas de optimización y algoritmos avanzados. El equipo demostró excelente coordinación y estrategia.",
+      "titulo": "Tu app 2023",
+      "fecha": "16 Noviembre 2023",
+      "imagen": "/imagenes/premios/tuapp2023.jpg",
+      "descripcion": "El Torneo Universitario de Apps es un proceso internacional que motiva a estudiantes en el desarrollo de emprendimientos tecnológicos que solucionan problemas reales.",
       "participantes": [
         {
-          "nombre": "Laura Sánchez",
-          "rol": "Líder Técnico",
-          "foto": "/images/participants/laura.jpg",
-          "logro": "Mejor solución en problemas de grafos"
+          "nombre": "Max Fravel Urquizo Oré",
+          "rol": "Programador",
+          "foto": "/images/participants/carlos.jpg",
+          "logro": ""
         },
         {
-          "nombre": "Miguel Torres",
-          "rol": "Programador Principal",
-          "foto": "/images/participants/miguel.jpg",
-          "logro": "Optimización de algoritmos complejos"
+          "nombre": "Rafael Javier Romero Flores",
+          "rol": "Programador",
+          "foto": "/images/participants/ana.jpg",
+          "logro": ""
         },
         {
-          "nombre": "Sofia Vega",
-          "rol": "Analista de Problemas",
-          "foto": "/images/participants/sofia.jpg",
-          "logro": "Estrategia de resolución eficiente"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "titulo": "Hackathon ACM 2023",
-      "fecha": "Julio 2023",
-      "imagen": "/images/awards/hackathon-2023.jpg",
-      "descripcion": "Primer lugar en el Hackathon ACM 2023, desarrollando una solución innovadora para problemas de sostenibilidad urbana utilizando IA y análisis de datos en tiempo real.",
-      "participantes": [
-        {
-          "nombre": "Roberto Méndez",
-          "rol": "Arquitecto de Software",
-          "foto": "/images/participants/roberto.jpg",
-          "logro": "Diseño de arquitectura escalable"
+          "nombre": "Daniel Andy Encizo Suarez",
+          "rol": "Programador",
+          "foto": "/images/participants/diego.jpg",
+          "logro": ""
         },
         {
-          "nombre": "Carmen Ortiz",
-          "rol": "Desarrolladora FullStack",
-          "foto": "/images/participants/carmen.jpg",
-          "logro": "Implementación de IA"
-        },
-        {
-          "nombre": "Juan Pablo García",
-          "rol": "Especialista en Datos",
-          "foto": "/images/participants/juan.jpg",
-          "logro": "Análisis de datos en tiempo real"
+          "nombre": "Jocabed Isabel Ferruzo Izquierdo",
+          "rol": "Diseñador",
+          "foto": "/images/participants/diego.jpg",
+          "logro": ""
         }
       ]
     }
