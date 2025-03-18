@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap');
 
 :root {
+  /* Colors */
   --primary: #4361EE;
   --secondary: #3A0CA3;
   --accent: #4CC9F0;
@@ -8,6 +9,27 @@
   --darker: #060818;
   --light: #F8F9FA;
   --star: #FFFFFF;
+  
+  /* Typography - Responsive font sizes using clamp(min, preferred, max) */
+  --fs-xxl: clamp(2.5rem, 5vw, 4rem);     /* Hero headings */
+  --fs-xl: clamp(2rem, 4vw, 3rem);        /* Section headings */
+  --fs-lg: clamp(1.5rem, 3vw, 2rem);      /* Sub-headings */
+  --fs-md: clamp(1.1rem, 2vw, 1.3rem);    /* Large body text */
+  --fs-base: clamp(0.9rem, 1.5vw, 1.1rem); /* Normal body text */
+  --fs-sm: clamp(0.8rem, 1vw, 0.9rem);    /* Small text */
+  --fs-xs: clamp(0.7rem, 0.8vw, 0.8rem);  /* Extra small text */
+  
+  /* Line heights */
+  --lh-tight: 1.2;
+  --lh-base: 1.6;
+  --lh-loose: 1.8;
+  
+  /* Spacing */
+  --space-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 1.5vw, 1rem);
+  --space-md: clamp(1rem, 2vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 3vw, 2.5rem);
+  --space-xl: clamp(2rem, 4vw, 3.5rem);
 }
 
 * {
@@ -20,7 +42,8 @@ body {
   font-family: 'Exo 2', sans-serif;
   background-color: var(--darker);
   color: var(--light);
-  line-height: 1.6;
+  line-height: var(--lh-base);
+  font-size: var(--fs-base);
   overflow-x: hidden;
   background-image: 
     radial-gradient(circle at 20% 35%, rgba(67, 97, 238, 0.15) 0%, transparent 50%),
@@ -30,17 +53,28 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-sm);
 }
+
+h1 { font-size: var(--fs-xxl); }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+h4 { font-size: var(--fs-md); }
+h5 { font-size: var(--fs-base); font-weight: 600; }
+h6 { font-size: var(--fs-sm); font-weight: 600; }
+
+p { margin-bottom: var(--space-md); }
 
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 var(--space-md);
 }
 
 .section {
-  padding: 6rem 0;
+  padding: var(--space-xl) 0;
 }
 
 .text-gradient {
@@ -48,3 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Small text utility classes */
+.text-sm { font-size: var(--fs-sm); }
+.text-xs { font-size: var(--fs-xs); }

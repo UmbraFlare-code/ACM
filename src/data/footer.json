@@ -1,10 +1,6 @@
 {
   "sections": [
     {
-      "title": "Sobre Nosotros",
-      "content": "ACM Continental es una comunidad dedicada a promover la innovación y el desarrollo profesional en tecnología."
-    },
-    {
       "title": "Enlaces Rápidos",
       "links": [
         { "text": "Inicio", "url": "#home" },
@@ -16,6 +12,10 @@
     {
       "title": "Contacto",
       "content": "¿Tienes preguntas? Únete a nuestro Discord o síguenos en redes sociales."
+    },
+    {
+      "title": "Colaboradores",
+      "content": "Urquizo Oré, Francis"
     }
   ],
   "socialLinks": {

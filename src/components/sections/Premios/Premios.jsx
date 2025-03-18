@@ -1,18 +1,34 @@
-import { FaTrophy, FaUsers } from 'react-icons/fa';
-import { useState } from 'react';
-import './Premios.css';
+import { FaTrophy, FaUsers, FaUser } from 'react-icons/fa';  // Add FaUser import
+import { useState, useCallback } from 'react';
 import premiosData from '../../../data/premiosData.json';
+import PremioCard from './components/PremioCard';
+import PremioModal from './components/PremioModal';
+import './Premios.css';
 
 const Premios = () => {
   const [selectedAward, setSelectedAward] = useState(null);
+  const [imageError, setImageError] = useState({});
 
-  // Replace the premiosACM constant with:
   const { premios } = premiosData;
 
-  const cerrarModal = () => setSelectedAward(null);
+  const handleSelectAward = useCallback((premio) => {
+    setSelectedAward(premio);
+  }, []);
+
+  const handleCloseModal = useCallback(() => {
+    setSelectedAward(null);
+    setImageError({});
+  }, []);
+
+  const handleImageError = useCallback((participanteId) => {
+    setImageError(prev => ({
+      ...prev,
+      [participanteId]: true
+    }));
+  }, []);
 
   return (
-    <section className="premios-section" id="prizes">
+    <section id="prizes" className="premios-section">
       <div className="cosmic-bg"></div>
       <div className="container">
         <div className="section-header">
@@ -22,61 +38,22 @@ const Premios = () => {
 
         <div className="premios-grid">
           {premios.map((premio) => (
-            <div 
-              key={premio.id} 
-              className="premio-card"
-              onClick={() => setSelectedAward(premio)}
-            >
-              <div className="premio-header">
-                <FaTrophy className="premio-icon" />
-                <h3>{premio.titulo}</h3>
-                <span className="premio-fecha">{premio.fecha}</span>
-              </div>
-
-              <div className="premio-imagen">
-                <img src={premio.imagen} alt={premio.titulo} />
-              </div>
-
-              <div className="premio-contenido">
-                <p>{premio.descripcion}</p>
-                <div className="participantes-preview">
-                  <FaUsers />
-                  <span>{premio.participantes.length} Participantes</span>
-                </div>
-              </div>
-            </div>
+            <PremioCard
+              key={premio.id}
+              premio={premio}
+              onSelect={handleSelectAward}
+            />
           ))}
         </div>
       </div>
 
       {selectedAward && (
-        <div className="modal-overlay" onClick={cerrarModal}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <button className="cerrar-modal" onClick={cerrarModal}>&times;</button>
-            
-            <div className="modal-header">
-              <h2>{selectedAward.titulo}</h2>
-              <span className="modal-fecha">{selectedAward.fecha}</span>
-            </div>
-
-            <div className="modal-descripcion">
-              <p>{selectedAward.descripcion}</p>
-            </div>
-
-            <div className="participantes-grid">
-              {selectedAward.participantes.map((participante, index) => (
-                <div key={index} className="participante-card">
-                  <div className="participante-foto">
-                    <img src={participante.foto} alt={participante.nombre} />
-                  </div>
-                  <h4>{participante.nombre}</h4>
-                  <p className="participante-rol">{participante.rol}</p>
-                  <p className="participante-logro">{participante.logro}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <PremioModal
+          award={selectedAward}
+          onClose={handleCloseModal}
+          imageError={imageError}
+          onImageError={handleImageError}
+        />
       )}
     </section>
   );

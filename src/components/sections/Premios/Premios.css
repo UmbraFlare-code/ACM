@@ -45,8 +45,13 @@
   margin-bottom: 1.5rem;
 }
 
+.premio-header h3 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-xs);
+}
+
 .premio-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #FFD700;
   margin-bottom: 1rem;
 }
@@ -98,11 +103,18 @@
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 2.5rem;
-  max-width: 900px;
-  width: 90%;
+  max-width: 1200px;  /* Increased from 900px */
+  width: 95%;        /* Increased from 90% */
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    width: 98%;    /* Increased from 95% */
+  }
 }
 
 .cerrar-modal {
@@ -121,10 +133,21 @@
   margin-bottom: 2rem;
 }
 
+.modal-header h2 {
+  font-size: var(--fs-lg);  /* Added to control title size */
+}
+
 .modal-fecha {
   color: var(--accent);
   display: block;
   margin-top: 0.5rem;
+  font-size: var(--fs-sm);  /* Added to maintain proportion */
+}
+
+@media (max-width: 768px) {
+  .modal-header h2 {
+    font-size: var(--fs-md);  /* Smaller on mobile */
+  }
 }
 
 .participantes-grid {
@@ -139,18 +162,30 @@
 }
 
 .participante-foto {
-  width: 150px;
-  height: 150px;
+  width: 120px;  /* Reduced from 150px */
+  height: 120px; /* Reduced from 150px */
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 1rem;
   border: 3px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .participante-foto {
+    width: 80px;   /* Reduced from 100px */
+    height: 80px;  /* Reduced from 100px */
+  }
 }
 
 .participante-foto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  width: auto;
+  height: auto;
 }
 
 .participante-rol {
@@ -177,5 +212,23 @@
 
   .participantes-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .premio-header h3 {
+    font-size: var(--fs-sm);
+  }
+
+  .premio-icon {
+    font-size: 1.5rem;
+  }
+
+  .participante-foto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fallback-icon {
+    width: 50%;
+    height: 50%;
   }
 }

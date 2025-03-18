@@ -3,10 +3,10 @@
     {
       "id": 1,
       "title": "DOTA 2",
-      "image": "/imagenes/dota2.png",
+      "image": "/imagenes/eventos/dota2.webp",
       "description": "Compite en dos emocionantes categorías: Maestros de la Batalla y Titanes del Trono en un emocionante torneo de DOTA 2.",
       "prizePool": "Hasta S/. 150",
-      "teamSize": "5v5 + 2 suplentes",
+      "teamSize": "5v5 + 2 suplentes (opcional)",
       "registrationFees": {
         "titular": "S/. 5",
         "suplente": "S/. 2",
@@ -23,23 +23,28 @@
       "categories": [
         {
           "name": "Titanes del Trono",
-          "rank": "Ancestral - Inmortal",
+          "rank": "Legend, Ancient y Divine",
           "prize": "S/. 150"
         },
         {
           "name": "Maestros de la Batalla",
-          "rank": "Heraldo - Arconte",
+          "rank": "Herald, Guardian, Crusader y Archon",
           "prize": "S/. 90"
         }
+      ],
+      "buttons": [
+        { "text": "Registrar Equipo", "type": "action", "action": "modal" },
+        { "text": "Bases", "type": "external", "href": "#" }
       ]
     },
+
     {
       "id": 2,
-      "title": "valorant",
-      "image": "/imagenes/valorant.png",
-      "description": "",
-      "prizePool": "",
-      "teamSize": "5v5 + 2 suplentes",
+      "title": "VALORANT",
+      "image": "/imagenes/eventos/valorant.png",
+      "description": "Compite en el ACM Gaming Fest – Valorant y demuestra tu habilidad en un torneo virtual diseñado para la comunidad universitaria. Dos categorías disponibles, premios exclusivos y transmisión en vivo.",
+      "prizePool": "5 Pases de Batalla (5175 Valor Points) por categoría, equivalentes a S/. 175",
+      "teamSize": "5v5 + 2 suplentes (opcional)",
       "registrationFees": {
         "titular": "S/. 5",
         "suplente": "S/. 2",
@@ -50,20 +55,24 @@
           "Los jugadores individuales pueden unirse a través de Discord"
         ]
       },
-      "date": "12 de Julio, 2024",
+      "date": "12 o 19 de Julio, 2024",
       "registrationLink": "#",
       "rulesLink": "#",
       "categories": [
         {
-          "name": "Titanes del Trono",
-          "rank": "",
-          "prize": ""
+          "name": "Junior",
+          "rank": "Hierro, Bronce, Plata y Oro",
+          "prize": "5 Pases de Batalla (5175 VP) - S/. 175"
         },
         {
-          "name": "Maestros de la Batalla",
-          "rank": "",
-          "prize": ""
+          "name": "Senior",
+          "rank": "Oro, Platino, Diamante y Ascendente",
+          "prize": "5 Pases de Batalla (5175 VP) - S/. 175"
         }
+      ],
+      "buttons": [
+        { "text": "Registrar Equipo", "type": "action", "action": "modal" },
+        { "text": "Bases", "type": "external", "href": "#" }
       ]
     }
   ]

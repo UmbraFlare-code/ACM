@@ -2,28 +2,34 @@
   "premios": [
     {
       "id": 1,
-      "titulo": "ICPC México 2023",
-      "fecha": "Noviembre 2023",
-      "imagen": "/images/awards/icpc-2023.jpg",
-      "descripcion": "Competencia regional de programación ICPC donde nuestros equipos alcanzaron el podio nacional, demostrando excelente trabajo en equipo y resolución de problemas algorítmicos complejos.",
+      "titulo": "Tu app 2023",
+      "fecha": "16 Noviembre 2023",
+      "imagen": "/imagenes/premios/tuapp2023.jpg",
+      "descripcion": "El Torneo Universitario de Apps es un proceso internacional que motiva a estudiantes en el desarrollo de emprendimientos tecnológicos que solucionan problemas reales.",
       "participantes": [
         {
-          "nombre": "Carlos Mendoza",
-          "rol": "Capitán de Equipo",
+          "nombre": "Max Fravel Urquizo Oré",
+          "rol": "Programador",
           "foto": "/images/participants/carlos.jpg",
-          "logro": "Resolución de 8 problemas algorítmicos"
+          "logro": ""
         },
         {
-          "nombre": "Ana Martínez",
-          "rol": "Estratega Principal",
+          "nombre": "Rafael Javier Romero Flores",
+          "rol": "Programador",
           "foto": "/images/participants/ana.jpg",
-          "logro": "Mejor tiempo de optimización"
+          "logro": ""
         },
         {
-          "nombre": "Diego Ramírez",
-          "rol": "Desarrollador",
+          "nombre": "Daniel Andy Encizo Suarez",
+          "rol": "Programador",
           "foto": "/images/participants/diego.jpg",
-          "logro": "Especialista en estructuras de datos"
+          "logro": ""
+        },
+        {
+          "nombre": "Jocabed Isabel Ferruzo Izquierdo",
+          "rol": "Diseñador",
+          "foto": "/images/participants/diego.jpg",
+          "logro": ""
         }
       ]
     },

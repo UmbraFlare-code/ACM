@@ -1,10 +1,9 @@
 {
-  "title": "Gaming Fest ACM",
-  "subtitle": "Primer Torne de Gaming UC",
-  "date": "12-13 de Julio, 2024",
-  "modality": "Virtual",
+  "title": "ACM - Innova UC",
+  "subtitle": "Donde las ideas cobran vida",
+  "date": "20 de Abril, 2025",
   "buttons": [
     { "text": "Eventos", "type": "primary" },
-    { "text": "Saber Más", "type": "outline" }
+    { "text": "Nuestra Visión", "type": "outline" }
   ]
 }

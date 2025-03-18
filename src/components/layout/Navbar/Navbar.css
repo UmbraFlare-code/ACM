@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: var(--space-md) 0;
   transition: all 0.3s ease;
 }
 
@@ -23,9 +23,9 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-sm);
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--fs-md);
   font-weight: 700;
   color: var(--accent);
 }
@@ -36,16 +36,17 @@
 
 .navbar-links {
   display: flex;
-  gap: 2rem;
+  gap: var(--space-lg);
 }
 
 .navbar-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-xs);
   color: var(--light);
   text-decoration: none;
   font-weight: 500;
+  font-size: var(--fs-base);
   transition: all 0.3s ease;
   position: relative;
 }
