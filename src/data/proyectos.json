@@ -4,7 +4,7 @@
       "id": 1,
       "titulo": "Landing Page de ACM",
       "descripcion": "Landing page para ACM, una comunidad académica de estudiantes de la Universidad Continental.",
-      "imagen": "/imagenes/proyectos/ACM.jpg",
+      "imagen": "/imagenes/proyectos/ACM.webp",
       "tecnologias": ["HTML", "CSS", "React", "Node.js"],
       "github": "https://github.com/UmbraFlare-code/ACM",
       "demo": "",
