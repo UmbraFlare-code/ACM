@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { FaGamepad, FaTrophy, FaCalendarAlt, FaInfoCircle, FaCode } from 'react-icons/fa';
+import { FiMenu, FiX } from "react-icons/fi"; 
 import { handleUIAction } from '../../common/uiActions';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +24,7 @@ const Navbar = () => {
   const handleNavClick = (sectionId, e) => {
     e.preventDefault();
     handleUIAction('scroll', { sectionId });
+    setIsMenuOpen(false);
   };
 
   return (
@@ -31,8 +34,8 @@ const Navbar = () => {
           <img src="/acm-logo.webp" alt="Logo de ACM" className="acm-logo" />
           <span>ACM</span>
         </div>
-        
-        <div className="navbar-links">
+
+        <div className={`navbar-links ${isMenuOpen ? 'menu-open' : ''}`}>
           <a href="#home" className="navbar-link" aria-label="Ir a inicio" onClick={(e) => handleNavClick('home', e)}>
             <FaGamepad /> Inicio
           </a>
@@ -51,10 +54,17 @@ const Navbar = () => {
           <a href="#about" className="navbar-link" aria-label="Sobre nosotros" onClick={(e) => handleNavClick('about', e)}>
             <FaInfoCircle /> Nosotros
           </a>
+          <button className="btn btn-primary navbar-cta" aria-label="Registrarse ahora">
+            Colaborar
+          </button>
         </div>
         
-        <button className="btn btn-primary navbar-cta" aria-label="Registrarse ahora">
-          Colaborar
+        <button 
+          className="menu-toggle"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+        >
+          {isMenuOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
     </nav>
