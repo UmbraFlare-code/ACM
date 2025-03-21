@@ -41,20 +41,20 @@ Web Gaming
 > Capturas de pantalla del proyecto:
 > 
 1. *Sección principal con tema cósmico*
-![Hero Section](public/imagenes/hero.jpg)
+![Hero Section](public/imagenes/hero.webp)
 
 <<<<<<< HEAD
 1. *Sección principal con tema cósmico*
-![Hero Section](public/imagenes/hero.jpg)
+![Hero Section](public/imagenes/hero.webp)
 
 2. *Muestra los próximos eventos de ACM*
-![Eventos ACM](public/imagenes/eventos.jpg)
+![Eventos ACM](public/imagenes/eventos.webp)
 
 3. *Interfaz de cronograma de eventos*
-![Cronograma](public/imagenes/cronograma.jpg)
+![Cronograma](public/imagenes/cronograma.webp)
 
 4. *Premiaciones de los integrantes de ACM*
-![Premiaciones](public/imagenes/premiaciones.jpg)
+![Premiaciones](public/imagenes/premiaciones.webp)
    
 ## 🛠 Technical Stack
 
