@@ -46,7 +46,7 @@ const Games = () => {
   }, [handleNavbarClick]);
 
   return (
-    <section id="games" className="games section">
+    <section id="events" className="games section">
       <div className="container">
         <div className="section-header">
           <h2>Evento <span className="text-gradient">Proximos</span></h2>

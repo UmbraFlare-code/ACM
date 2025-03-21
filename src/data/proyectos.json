@@ -1,0 +1,62 @@
+{
+  "proyectos": [
+    {
+      "id": 1,
+      "titulo": "Landing Page de ACM",
+      "descripcion": "Landing page para ACM, una comunidad académica de estudiantes de la Universidad Continental.",
+      "imagen": "/imagenes/proyectos/ACM.jpg",
+      "tecnologias": ["HTML", "CSS", "React", "Node.js"],
+      "github": "https://github.com/UmbraFlare-code/ACM",
+      "demo": "",
+      "caracteristicas": [
+        "Dashboard interactivo con estadísticas en tiempo real",
+        "Sistema de autenticación con roles y permisos",
+        "Generación de reportes académicos",
+        "Interfaz responsive para dispositivos móviles"
+      ],
+      "equipo": [
+        {
+          "nombre": "Carlos Mendoza",
+          "rol": "Frontend Developer"
+        },
+        {
+          "nombre": "Ana Sánchez",
+          "rol": "Backend Developer"
+        },
+        {
+          "nombre": "Diego Flores",
+          "rol": "UI/UX Designer"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Plataforma de Aprendizaje IA",
+      "descripcion": "Sistema educativo basado en inteligencia artificial que adapta el contenido según el progreso y estilo de aprendizaje de cada estudiante.",
+      "imagen": "/imagenes/proyectos/proyecto3.jpg",
+      "tecnologias": ["Vue.js", "TensorFlow", "Django", "PostgreSQL"],
+      "github": "https://github.com/ACMContinental/ai-learning",
+      "demo": "https://ai-learning.acm-uc.com",
+      "caracteristicas": [
+        "Algoritmos de recomendación de contenido personalizado",
+        "Evaluación adaptativa según nivel de conocimiento",
+        "Análisis de patrones de aprendizaje",
+        "Contenido multimedia interactivo"
+      ],
+      "equipo": [
+        {
+          "nombre": "Javier Mendez",
+          "rol": "AI Engineer"
+        },
+        {
+          "nombre": "Camila Ortiz",
+          "rol": "Full Stack Developer"
+        },
+        {
+          "nombre": "Ricardo Paredes",
+          "rol": "Educational Content"
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import Hero from './components/sections/Hero/Hero'
 import Games from './components/sections/Events/Events'
 import Schedule from './components/sections/Cronograma/Cronograma'
 import Prizes from './components/sections/Premios/Premios'
+import Proyectos from './components/sections/Proyectos/Proyectos'
 import About from './components/sections/About/About'
 import './App.css'
 
@@ -41,6 +42,7 @@ function App() {
         <Games />
         <Schedule />
         <Prizes />
+        <Proyectos />
         <About />
       </main>
       <Footer />

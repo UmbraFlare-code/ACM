@@ -4,6 +4,7 @@
   "date": "20 de Abril, 2025",
   "buttons": [
     { "text": "Eventos", "type": "primary" },
+    { "text": "Proyectos", "type": "primary" },
     { "text": "Nuestra Visión", "type": "outline" }
   ]
 }

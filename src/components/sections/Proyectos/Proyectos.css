@@ -1,0 +1,398 @@
+.proyectos-section {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.proyecto-card {
+  background: rgba(11, 14, 45, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(67, 97, 238, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(67, 97, 238, 0.2);
+}
+
+.proyecto-card.active {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(67, 97, 238, 0.3);
+  border-color: var(--accent);
+}
+
+.proyecto-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.proyecto-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.proyecto-card:hover .proyecto-image img {
+  transform: scale(1.05);
+}
+
+.proyecto-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(6, 8, 24, 0.9), transparent);
+  transition: opacity 0.3s ease;
+}
+
+.proyecto-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(76, 201, 240, 0.2);
+  color: var(--accent);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  backdrop-filter: blur(5px);
+}
+
+.proyecto-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.proyecto-content h3 {
+  font-size: var(--fs-md);
+  margin-bottom: 1rem;
+  color: var(--light);
+}
+
+.proyecto-content p {
+  color: rgba(248, 249, 250, 0.8);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.proyecto-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.proyecto-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.proyecto-links a:hover {
+  color: var(--primary);
+}
+
+.proyecto-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(67, 97, 238, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.proyecto-features h4,
+.proyecto-team h4 {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.proyecto-features ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.proyecto-features li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: rgba(248, 249, 250, 0.8);
+  font-size: 0.9rem;
+}
+
+.proyecto-features li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.proyecto-team {
+  margin-top: 1.5rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  background: rgba(67, 97, 238, 0.1);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+}
+
+.team-member span {
+  font-size: 0.9rem;
+  color: var(--light);
+}
+
+.team-member small {
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .proyecto-image {
+    height: 180px;
+  }
+}
+
+
+/* Add these styles to your existing Proyectos.css file */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 8, 24, 0.85);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 5rem 2rem 2rem; /* Increased top padding to avoid navbar overlap */
+  overflow-y: auto;
+}
+
+.proyecto-modal {
+  background: linear-gradient(145deg, rgba(11, 14, 45, 0.95), rgba(6, 8, 24, 0.95));
+  border: 1px solid rgba(67, 97, 238, 0.3);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 85vh; /* Reduced from 90vh to ensure it doesn't overlap with navbar */
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: modalFadeIn 0.3s ease;
+  margin-top: 2rem; /* Added margin to push modal down from top */
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(67, 97, 238, 0.2);
+  border: none;
+  color: var(--light);
+  font-size: 1.5rem;
+  width: 2.5rem; /* Increased size */
+  height: 2.5rem; /* Increased size */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.cerrar-modal:hover {
+  background: rgba(76, 201, 240, 0.3);
+  transform: rotate(90deg);
+}
+
+.modal-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(67, 97, 238, 0.3);
+  padding-bottom: 1rem;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--light);
+}
+
+.proyecto-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.proyecto-imagen-modal {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(67, 97, 238, 0.2);
+}
+
+.proyecto-imagen-modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-descripcion {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.proyecto-features-modal h3,
+.proyecto-team-modal h3 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.proyecto-features-modal h3::before,
+.proyecto-team-modal h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--accent), var(--primary));
+  border-radius: 3px;
+}
+
+.proyecto-features-modal ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.proyecto-features-modal li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.proyecto-features-modal li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.team-member-card {
+  background: rgba(67, 97, 238, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(67, 97, 238, 0.2);
+}
+
+.team-member-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: var(--light);
+}
+
+.team-member-card p {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 0;
+}
+
+.proyecto-links-modal {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.proyecto-links-modal a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .proyecto-modal {
+    padding: 1.5rem;
+  }
+  
+  .team-members-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .proyecto-links-modal {
+    flex-direction: column;
+  }
+}

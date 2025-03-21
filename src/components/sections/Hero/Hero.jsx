@@ -4,6 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
   const { title, subtitle, date, buttons } = heroData;
+  
   return (
     <section id="home" className="hero" aria-label="Sección principal">
       <div className="hero-content">
@@ -17,16 +18,23 @@ const Hero = () => {
           {date}
         </div>
         <div className="hero-cta" aria-label="Botones de acción">
-          {buttons.map((button, index) => (
-            <button 
-              key={index} 
-              className={`btn btn-${button.type}`}
-              onClick={() => scrollToSection(button.type === 'primary' ? 'games' : 'about')}
-              aria-label={button.text}
-            >
-              {button.text}
-            </button>
-          ))}
+          {buttons.map((button, index) => {
+            // Determine target section based on button text
+            let targetSection = '';
+            if (button.text === 'Eventos') targetSection = 'events';
+            if (button.text === 'Proyectos') targetSection = 'proyectos';
+            if (button.text === 'Nuestra Visión') targetSection = 'about';
+            return (
+              <button 
+                key={index} 
+                className={`btn btn-${button.type}`}
+                onClick={() => scrollToSection(targetSection)}
+                aria-label={button.text}
+              >
+                {button.text}
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>

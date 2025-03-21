@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaGamepad, FaTrophy, FaCalendarAlt, FaInfoCircle } from 'react-icons/fa';
+import { FaGamepad, FaTrophy, FaCalendarAlt, FaInfoCircle, FaCode } from 'react-icons/fa';
 import { handleUIAction } from '../../common/uiActions';
 import './Navbar.css';
 
@@ -44,6 +44,9 @@ const Navbar = () => {
           </a>
           <a href="#prizes" className="navbar-link" aria-label="Ver premios" onClick={(e) => handleNavClick('prizes', e)}>
             <FaTrophy /> Premios
+          </a>
+          <a href="#proyecto" className="navbar-link" aria-label="Ver proyectos" onClick={(e) => handleNavClick('proyectos', e)}>
+            <FaCode /> Proyectos
           </a>
           <a href="#about" className="navbar-link" aria-label="Sobre nosotros" onClick={(e) => handleNavClick('about', e)}>
             <FaInfoCircle /> Nosotros
