@@ -7,13 +7,9 @@ import './Proyectos.css';
 const Proyectos = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   
-  const handleProjectClick = useCallback((proyecto) => {
-    setSelectedProject(proyecto);
-  }, []);
-
-  const handleCloseModal = useCallback(() => {
-    setSelectedProject(null);
-  }, []);
+  const handleProjectClick = useCallback(proyecto => setSelectedProject(proyecto), []);
+  const handleCloseModal = useCallback(() => setSelectedProject(null), []);
+  const handleLinkClick = useCallback(e => e.stopPropagation(), []);
 
   return (
     <section id="proyectos" className="proyectos-section section">
@@ -24,12 +20,8 @@ const Proyectos = () => {
         </div>
 
         <div className="proyectos-grid">
-          {proyectosData.proyectos.map((proyecto) => (
-            <div 
-              key={proyecto.id} 
-              className="proyecto-card"
-              onClick={() => handleProjectClick(proyecto)}
-            >
+          {proyectosData.proyectos.map(proyecto => (
+            <div key={proyecto.id} className="proyecto-card" onClick={() => handleProjectClick(proyecto)}>
               <div className="proyecto-image">
                 <img src={proyecto.imagen} alt={proyecto.titulo} loading="lazy" />
                 <div className="proyecto-overlay">
@@ -47,14 +39,12 @@ const Proyectos = () => {
                 
                 <div className="proyecto-links">
                   {proyecto.github && (
-                    <a href={proyecto.github} target="_blank" rel="noopener noreferrer" 
-                       onClick={(e) => e.stopPropagation()}>
+                    <a href={proyecto.github} target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
                       <FaGithub /> Código
                     </a>
                   )}
                   {proyecto.demo && (
-                    <a href={proyecto.demo} target="_blank" rel="noopener noreferrer"
-                       onClick={(e) => e.stopPropagation()}>
+                    <a href={proyecto.demo} target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
                       <FaExternalLinkAlt /> Demo
                     </a>
                   )}
@@ -65,12 +55,7 @@ const Proyectos = () => {
         </div>
       </div>
       
-      {selectedProject && (
-        <ProyectoModal 
-          proyecto={selectedProject} 
-          onClose={handleCloseModal} 
-        />
-      )}
+      {selectedProject && <ProyectoModal proyecto={selectedProject} onClose={handleCloseModal} />}
     </section>
   );
 };

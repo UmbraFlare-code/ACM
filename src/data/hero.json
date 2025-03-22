@@ -1,7 +1,6 @@
 {
-  "title": "ACM - Innova UC",
+  "title": "ACM Innova UC",
   "subtitle": "Donde las ideas cobran vida",
-  "date": "20 de Abril, 2025",
   "buttons": [
     { "text": "Eventos", "type": "primary" },
     { "text": "Proyectos", "type": "primary" },

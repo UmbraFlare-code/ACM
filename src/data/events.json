@@ -33,7 +33,7 @@
         }
       ],
       "buttons": [
-        { "text": "Registrar Equipo", "type": "action", "action": "modal" },
+        { "text": "Registrar", "type": "action", "action": "modal" },
         { "text": "Bases", "type": "external", "href": "#" }
       ]
     },
@@ -71,7 +71,7 @@
         }
       ],
       "buttons": [
-        { "text": "Registrar Equipo", "type": "action", "action": "modal" },
+        { "text": "Registrar", "type": "action", "action": "modal" },
         { "text": "Bases", "type": "external", "href": "#" }
       ]
     }

@@ -11,31 +11,39 @@ import './App.css'
 
 function App() {
   useEffect(() => {
-    const createStars = () => {
-      const starsContainer = document.querySelector('.stars');
-      if (!starsContainer) return; 
+    const starsContainer = document.querySelector('.stars');
+    if (!starsContainer) return;
+    
+    // Create all stars at once with their styles pre-computed
+    const fragment = document.createDocumentFragment();
+    const stars = Array.from({length: 100}).map(() => {
+      const star = document.createElement('div');
+      const size = Math.random() * 3 + 1;
+      star.className = 'star';
+      star.style.cssText = `
+        position: absolute;
+        top: ${Math.random() * 100}%;
+        left: ${Math.random() * 100}%;
+        width: ${size}px;
+        height: ${size}px;
+        animation-delay: ${Math.random() * 5}s;
+        animation-duration: ${Math.random() * 3 + 2}s;
+      `;
+      return star;
+    });
+    
+    stars.forEach(star => fragment.appendChild(star));
+    starsContainer.appendChild(fragment);
+
+    // Cleanup function
+    return () => {
       starsContainer.innerHTML = '';
-      
-      const starCount = 100;
-      
-      for (let i = 0; i < starCount; i++) {
-        const star = document.createElement('div');
-        star.className = 'star';
-        star.style.top = `${Math.random() * 100}%`;
-        star.style.left = `${Math.random() * 100}%`;
-        star.style.width = `${Math.random() * 3 + 1}px`;
-        star.style.height = star.style.width;
-        star.style.animationDelay = `${Math.random() * 5}s`;
-        star.style.animationDuration = `${Math.random() * 3 + 2}s`; 
-        starsContainer.appendChild(star);
-      }
     };
-    setTimeout(createStars, 100);
   }, []);
 
   return (
     <div className="app">
-      <div className="stars"></div>
+      <div className="stars" />
       <Navbar />
       <main className="container">
         <Hero />
@@ -47,7 +55,7 @@ function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

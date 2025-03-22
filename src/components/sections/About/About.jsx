@@ -37,7 +37,7 @@ const About = () => {
             {features.map((feature, index) => (
               <div key={index} className="feature-card">
                 {getIcon(feature.icon)}
-                <h4>{feature.title}</h4>
+                <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
               </div>
             ))}

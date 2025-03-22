@@ -3,16 +3,16 @@ import { FaGithub, FaExternalLinkAlt, FaCode } from 'react-icons/fa';
 
 const ProyectoModal = React.memo(({ proyecto, onClose }) => {
   useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.key === 'Escape') onClose();
-    };
+    const handleEscape = ({key}) => key === 'Escape' && onClose();
     document.addEventListener('keydown', handleEscape);
     return () => document.removeEventListener('keydown', handleEscape);
   }, [onClose]);
 
+  const stopPropagation = e => e.stopPropagation();
+
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content proyecto-modal" onClick={e => e.stopPropagation()}>
+      <div className="modal-content proyecto-modal" onClick={stopPropagation}>
         <button className="cerrar-modal" onClick={onClose}>&times;</button>
         
         <div className="modal-header">

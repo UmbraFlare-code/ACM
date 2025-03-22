@@ -5,6 +5,12 @@
   align-items: center;
   position: relative;
   justify-content: center;
+  opacity: 1;
+  transition: min-height 0.5s ease;
+}
+
+.hero.scrolling {
+  min-height: 50vh;
 }
 
 .hero-content {
@@ -12,6 +18,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 1;
+}
+
+/* Add particle effect container */
+.particles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .hero-title {
@@ -19,6 +44,7 @@
   line-height: 1.1;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-subtitle {
@@ -40,7 +66,40 @@
 
 .hero-cta {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.vision-button {
+  width: fit-content;
+  min-width: 200px;
+  text-align: center;
+}
+
+.secondary-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .secondary-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .secondary-buttons button,
+  .vision-button {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .hero-image {
