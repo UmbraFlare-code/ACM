@@ -7,6 +7,16 @@ import './Navbar.css';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1100);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,13 +69,15 @@ const Navbar = () => {
           </button>
         </div>
         
-        <button 
-          className="menu-toggle"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
-        >
-          {isMenuOpen ? <FiX /> : <FiMenu />}
-        </button>
+        {isMobile && (
+          <button 
+            className="menu-toggle"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+          >
+            {isMenuOpen ? <FiX /> : <FiMenu />}
+          </button>
+        )}
       </div>
     </nav>
   );
