@@ -43,7 +43,7 @@ const Footer = () => {
                 <ul>
                   {section.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
-                      <a href={link.url} title={`Ir a ${link.text}`}>
+                      <a href={link.url} title={`Ir a ${link.text}`} className="footer-link">
                         {link.text}
                       </a>
                     </li>

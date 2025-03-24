@@ -10,24 +10,16 @@ export const initHeroAnimation = () => {
   ScrollTrigger.create({
     trigger: hero,
     start: 'top top',
-    end: '+=50%',
-    scrub: 0.5,      // Reduced scrub value for more natural scrolling
+    end: 'bottom top',
+    scrub: true,
     onUpdate: (self) => {
       const progress = self.progress;
       
-      // Animate hero height
-      gsap.to(hero, {
-        minHeight: `${100 - (progress * 50)}vh`,
-        duration: 0.5,  // Increased duration for smoother transition
-        ease: 'power1.out'  // Changed ease for more natural movement
-      });
-      
-      // Fade out content
       gsap.to(heroContent, {
         opacity: 1 - progress,
-        y: progress * 100,
-        duration: 0.5,  // Matched duration
-        ease: 'power1.out'  // Matched ease
+        y: progress * 300, // Increased from 100 to 200 for more movement
+        duration: 0.1,
+        ease: 'none'
       });
     }
   });

@@ -69,6 +69,11 @@
   height: 100%;
 }
 
+.game-image.loading img {
+  filter: blur(10px);
+  transition: filter 0.3s ease;
+}
+
 .game-image img {
   width: 100%;
   height: 100%;

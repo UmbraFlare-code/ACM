@@ -1,4 +1,11 @@
-import { FaTrophy, FaUsers, FaGamepad, FaGlobe } from 'react-icons/fa';
+import { 
+  FaTrophy, 
+  FaLaptopCode, 
+  FaMobile, 
+  FaShieldAlt, 
+  FaGamepad, 
+  FaGlobe 
+} from 'react-icons/fa';
 import aboutData from '../../../data/about.json';
 import './About.css';
 
@@ -9,8 +16,12 @@ const About = () => {
     switch(iconName) {
       case 'trophy':
         return <FaTrophy className="feature-icon" />;
-      case 'users':
-        return <FaUsers className="feature-icon" />;
+      case 'code':
+        return <FaLaptopCode className="feature-icon" />;
+      case 'mobile':
+        return <FaMobile className="feature-icon" />;
+      case 'shield':
+        return <FaShieldAlt className="feature-icon" />;
       case 'gamepad':
         return <FaGamepad className="feature-icon" />;
       case 'globe':
@@ -34,13 +45,22 @@ const About = () => {
           </div>
 
           <div className="features-grid">
-            {features.map((feature, index) => (
-              <div key={index} className="feature-card">
-                {getIcon(feature.icon)}
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
-              </div>
-            ))}
+            {features
+              .map(value => ({ value, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ value: feature }, index) => (
+                <div key={index} className="feature-card" style={{
+                  animationDelay: `${index * 0.1}s`
+                }}>
+                  <div className="icon-wrapper">
+                    {getIcon(feature.icon)}
+                  </div>
+                  <div className="feature-content">
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>

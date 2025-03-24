@@ -9,9 +9,29 @@
       "description": "Participa en competencias y proyectos que desafían tus habilidades y te preparan para el mundo profesional"
     },
     {
-      "icon": "users",
-      "title": "Enfoque Comunitario",
-      "description": "Únete a una familia donde tus hermanos mayores te guían y apoyan en tu desarrollo profesional y personal"
+      "icon": "code",
+      "title": "Desarrollo Web",
+      "description": "Aprende las últimas tecnologías en desarrollo web, desde frontend hasta backend, trabajando en proyectos reales"
+    },
+    {
+      "icon": "mobile",
+      "title": "Desarrollo Móvil",
+      "description": "Explora el mundo de las aplicaciones móviles, creando soluciones innovadoras para iOS y Android"
+    },
+    {
+      "icon": "shield",
+      "title": "Ciberseguridad",
+      "description": "Descubre las mejores prácticas en seguridad informática y protección de sistemas digitales"
+    },
+    {
+      "icon": "gamepad",
+      "title": "Desarrollo de Videojuegos",
+      "description": "Crea experiencias interactivas únicas aprendiendo desarrollo de juegos y diseño de mecánicas"
+    },
+    {
+      "icon": "globe",
+      "title": "Community Management",
+      "description": "Gestiona comunidades digitales y aprende estrategias efectivas de comunicación en redes sociales"
     }
   ]
 }

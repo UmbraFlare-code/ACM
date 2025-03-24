@@ -1,24 +1,24 @@
 .footer {
+  padding: 2rem 0;
   background: rgba(6, 8, 24, 0.95);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(67, 97, 238, 0.2);
-  padding: 4rem 0 2rem;
   width: 100%;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .footer-section {
   min-width: 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 @media (max-width: 992px) {
@@ -32,10 +32,6 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
-  .footer {
-    padding: 3rem 0 1.5rem;
-  }
 }
 
 .footer-section h3 {
@@ -44,19 +40,15 @@
   font-size: 1.5rem;
 }
 
-.footer-section h4 {
-  color: var(--light);
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
 .footer-section p {
   color: rgba(248, 249, 250, 0.7);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .footer-section ul {
   list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 .footer-section ul li {
@@ -66,16 +58,40 @@
 .footer-section ul li a {
   color: rgba(248, 249, 250, 0.7);
   text-decoration: none;
-  transition: color 0.3s ease;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 20px;
 }
 
 .footer-section ul li a:hover {
   color: var(--accent);
+  background: rgba(67, 97, 238, 0.1);
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
 
 .social-links {
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .social-links a {
@@ -90,12 +106,13 @@
 }
 
 .footer-bottom {
-  padding-top: 2rem;
   text-align: center;
   border-top: 1px solid rgba(67, 97, 238, 0.2);
+  margin-top: 1rem;
 }
 
 .footer-bottom p {
   color: rgba(248, 249, 250, 0.5);
   font-size: 0.9rem;
+  padding: 1rem 0;
 }

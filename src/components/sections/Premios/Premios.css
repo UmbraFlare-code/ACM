@@ -25,6 +25,12 @@
   margin-top: 3rem;
 }
 
+@media (max-width: 768px) {
+  .premios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .premio-card {
   background: rgba(11, 14, 45, 0.7);
   backdrop-filter: blur(10px);
