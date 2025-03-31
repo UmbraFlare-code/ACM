@@ -17,7 +17,7 @@ export const initHeroAnimation = () => {
       
       gsap.to(heroContent, {
         opacity: 1 - progress,
-        y: progress * 300, // Increased from 100 to 200 for more movement
+        y: progress * 300,
         duration: 0.1,
         ease: 'none'
       });
