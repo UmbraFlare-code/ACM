@@ -1,18 +1,17 @@
 import React, { useMemo } from 'react';
-import { FaCalendarAlt, FaClock } from 'react-icons/fa';
+import { FaCalendarAlt, FaClock, FaCircle } from 'react-icons/fa';
 import scheduleData from '../../../data/schedule.json';
 import './Cronograma.css';
 
 const Schedule = () => {
   const { title, subtitle, days } = scheduleData;
   
-  // Use useMemo for the timeline content to prevent unnecessary recalculations
   const timelineContent = useMemo(() => (
     <div className="timeline">
       {days.map(({ date, events }, index) => (
         <div key={index} className="timeline-day">
           <div className="day-header">
-            <FaCalendarAlt className="day-icon" />
+            <FaCircle className="day-icon" />
             <h3>{date}</h3>
           </div>
           
@@ -33,21 +32,19 @@ const Schedule = () => {
         </div>
       ))}
     </div>
-  ), [days]); // Only recalculate if days changes
+  ), [days]);
   
   return (
     <section id="schedule" className="schedule section">
       <div className="container">
         <div className="section-header">
-          <h2>{title}</h2>
+          <h2>Cronograma de <span className="text-gradient">Eventos</span></h2>
           <p>{subtitle}</p>
         </div>
-
         {timelineContent}
       </div>
     </section>
   );
 };
 
-// Wrap the component with React.memo to prevent re-renders if props don't change
 export default React.memo(Schedule);

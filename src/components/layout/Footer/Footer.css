@@ -1,5 +1,4 @@
 .footer {
-  padding: 2rem 0;
   background: rgba(6, 8, 24, 0.95);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(67, 97, 238, 0.2);
@@ -10,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -19,6 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 @media (max-width: 992px) {
@@ -46,9 +46,12 @@
 }
 
 .footer-section ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   text-align: center;
   padding: 0;
+  gap: 0.5rem;
 }
 
 .footer-section ul li {
@@ -108,7 +111,9 @@
 .footer-bottom {
   text-align: center;
   border-top: 1px solid rgba(67, 97, 238, 0.2);
-  margin-top: 1rem;
+  p {
+    margin: 0;
+  }
 }
 
 .footer-bottom p {

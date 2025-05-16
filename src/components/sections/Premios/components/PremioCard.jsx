@@ -11,15 +11,16 @@ const PremioCard = React.memo(({ premio, onSelect, totalCards }) => {
     >
       <div className="premio-header">
         <FaTrophy className="premio-icon" />
-        <h3>{premio.titulo}</h3>
-        <span className="premio-fecha">{premio.fecha}</span>
+        <div className='premio-header-text'>
+          <h3>{premio.titulo}</h3>
+          <span className="premio-fecha">{premio.fecha}</span>
+        </div>
       </div>
 
       <div className={imageClass}>
         <img 
           src={premio.imagen} 
           alt={premio.titulo} 
-          loading="lazy"
         />
       </div>
 

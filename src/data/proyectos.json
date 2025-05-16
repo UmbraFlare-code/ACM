@@ -21,6 +21,26 @@
           "rol": "Full Stack Developer & UI/UX Designer"
         }
       ]
+    },
+    {
+      "id": 2,
+      "titulo": "🎸🔥FELIZ DÍA DEL METAL🔥🎸",
+      "descripcion": "Para conmemorar esta fecha legendaria, nuestro líder del Área de Ciencia de Datos creó una página épica. #RetoCalendar ⚔💻",
+      "imagen": "/imagenes/proyectos/Rock.webp",
+      "tecnologias": ["HTML", "CSS", "Angular", "TypeScript", "Node.js"],
+      "github": "",
+      "demo": "https://meeetalacmday.netlify.app/",
+      "caracteristicas": [
+        "🎨 Usa HTML, CSS, JS (o lo que quieras) para rendirle homenaje con estilo.",
+        "💡 La idea es simple: elegir una fecha significativa y expresarte en la web como desarrollador/a creativo/a.",
+        "⚡ Súmate al reto y comparte tu página con nosotros."
+      ],
+      "equipo": [
+        {
+          "nombre": "Urquizo Oré, Francis Maxuel",
+          "rol": "Full Stack Developer & UI/UX Designer"
+        }
+      ]
     }
   ]
 }

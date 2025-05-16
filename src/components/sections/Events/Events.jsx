@@ -50,7 +50,7 @@ const Games = () => {
       <div className="container">
         <div className="section-header">
           <h2>Evento <span className="text-gradient">Proximos</span></h2>
-          <p>¡Descubre los emocionantes eventos que ACM tiene preparados para ti!</p>
+          <p>¡Emocionantes eventos que ACM!</p>
         </div>
         
         <div className="games-showcase">
@@ -67,7 +67,6 @@ const Games = () => {
                 <img 
                   src={currentGame.image.replace('.webp', '.jpg')} 
                   alt={currentGame.title}
-                  loading="lazy"
                 />
               </picture>
               <div className="game-overlay"></div>

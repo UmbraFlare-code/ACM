@@ -48,18 +48,26 @@
 
 .premio-header {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 1.5rem;
 }
 
-.premio-header h3 {
-  font-size: var(--fs-md);
-  margin-bottom: var(--space-xs);
+.premio-header-text {
+  width: fit-content;
+
+  h3 {
+    font-size: var(--fs-md);
+    margin-bottom: var(--space-xs);
+  }
 }
 
 .premio-icon {
   font-size: 2rem;
   color: #FFD700;
-  margin-bottom: 1rem;
 }
 
 .premio-fecha {
@@ -164,19 +172,42 @@
 }
 
 .participante-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.participante-info {
   text-align: center;
+  width: 100%;
 }
 
 .participante-foto {
-  width: 120px;  /* Reduced from 150px */
-  height: 120px; /* Reduced from 150px */
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 1rem;
-  border: 3px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.participante-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para cuando no hay imagen */
+.participante-card:not(:has(.participante-foto)) {
+  padding: 1.5rem;
+}
+
+.participante-card:not(:has(.participante-foto)) .participante-info {
+  padding-left: 1rem;
+  text-align: left;
 }
 
 @media (max-width: 768px) {

@@ -4,22 +4,20 @@ import React from 'react';
 const ParticipanteCard = React.memo(({ participante, index, onImageError, imageError }) => {
   return (
     <div className="participante-card">
-      <div className="participante-foto">
-        {imageError[index] ? (
-          <div className="fallback-avatar">
-            <FaUser className="fallback-icon" />
-          </div>
-        ) : (
+      {!imageError[index] && participante.foto && (
+        <div className="participante-foto">
           <img 
             src={participante.foto} 
             alt={participante.nombre}
             onError={() => onImageError(index)}
           />
-        )}
+        </div>
+      )}
+      <div className="participante-info">
+        <h4 className="text-sm font-medium">{participante.nombre}</h4>
+        <p className="participante-rol text-xs text-gray-400">{participante.rol}</p>
+        <p className="participante-logro text-xs">{participante.logro}</p>
       </div>
-      <h4 className="text-sm">{participante.nombre}</h4>
-      <p className="participante-rol text-xs">{participante.rol}</p>
-      <p className="participante-logro text-xs">{participante.logro}</p>
     </div>
   );
 });
