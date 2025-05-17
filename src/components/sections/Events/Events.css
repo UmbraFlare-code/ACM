@@ -61,9 +61,8 @@
   gap: 2rem;
   padding: 2rem;
 }
-
+/* Solo al contenedor designado */
 .game-image {
-  position: relative;
   border-radius: 8px;
   overflow: hidden;
   height: 100%;
@@ -273,51 +272,389 @@
   color: var(--accent);
 }
 
-.modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: rgba(67, 97, 238, 0.1);
-  border: 1px solid rgba(67, 97, 238, 0.2);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent);
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.modal-close:hover {
-  background: rgba(67, 97, 238, 0.2);
-  transform: rotate(90deg);
-  color: var(--light);
+/* Modal Styles */
+.modal-open {
+  overflow: hidden !important;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  inset: 0;
 }
 
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(6, 8, 24, 0.75);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: 2000;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: clamp(1rem, 3vh, 2rem);
+  z-index: var(--z-modal);
 }
 
 .modal-content {
-  background: rgba(11, 14, 45, 0.85);
-  border: 1px solid rgba(67, 97, 238, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: var(--background);
   border-radius: 12px;
+  width: 100%;
+  max-width: min(600px, 95vw);
+  margin: auto;
   position: relative;
-  width: 90%;
-  max-width: 600px;
+  overflow-y: auto;
+  max-height: calc(100vh - clamp(2rem, 6vh, 4rem));
+}
+
+/* Hide scrollbar but keep functionality */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--light);
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.modal-body {
   padding: 2rem;
-  animation: modalFadeIn 0.3s ease;
+}
+
+.modal-body h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--light);
+}
+
+.modal-description {
+  color: var(--light-gray);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.modal-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+}
+
+.modal-categories, .modal-requirements {
+  margin-bottom: 2rem;
+}
+
+.modal-categories h3, .modal-requirements h3 {
+  color: var(--light);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Category Grid Styles */
+.modal-categories {
+  margin-bottom: 1.5rem;
+}
+
+.modal-categories h3 {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.modal-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.category-item {
+  display: grid;
+  grid-template-areas:
+    "name prize"
+    "rank rank";
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(67, 97, 238, 0.05);
+  border-radius: 8px;
+  border-left: 2px solid var(--accent);
+}
+
+.category-item h4 {
+  grid-area: name;
+  font-size: 0.95rem;
+  color: var(--light);
+  margin: 0;
+}
+
+.category-item .prize {
+  grid-area: prize;
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-align: right;
+  margin: 0;
+}
+
+.category-item .rank {
+  grid-area: rank;
+  font-size: 0.85rem;
+  color: var(--light-gray);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .category-item {
+    grid-template-areas:
+      "name"
+      "rank"
+      "prize";
+  }
+
+  .category-item .prize {
+    text-align: left;
+  }
+}
+
+.category-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.category-item h4 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.category-item .rank {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+}
+
+.category-item .prize {
+  color: var(--light);
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.modal-requirements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-requirements li {
+  color: var(--light-gray);
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.modal-requirements li::before {
+  content: "•";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+}
+
+.fees-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--light);
+}
+
+.register-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: var(--accent);
+  color: var(--light);
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+}
+
+.events-section {
+  padding: 6rem 0;
+  background: var(--background);
+  scroll-margin-top: 100px; /* Creates space when scrolling to this section */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--light);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  position: relative;
+  min-width: 165px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.05);
+}
+
+.event-date {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.event-content {
+  padding: 1.5rem;
+}
+
+.event-content h3 {
+  font-size: 1.25rem;
+  color: var(--light);
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.event-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.modal-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+  margin: 0;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+}
+
+.register-button {
+  background: var(--accent);
+  color: var(--light);
+}
+
+.rules-button {
+  background: transparent;
+  color: var(--light);
+  border: 1px solid var(--accent);
+
+}
+
+.rules-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.game-icon {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.event-card:hover .game-icon {
+  color: var(--light);
+}
+
+/* For modal usage */
+.modal-header .game-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px rgba(67, 97, 238, 0.3));
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
 }

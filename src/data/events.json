@@ -1,63 +1,17 @@
 {
-  "games": [
+  "events": [
     {
       "id": 1,
-      "title": "DOTA 2",
-      "image": "/imagenes/eventos/dota2.webp",
-      "description": "Compite en dos emocionantes categorías: Maestros de la Batalla y Titanes del Trono en un emocionante torneo de DOTA 2.",
-      "prizePool": "Hasta S/. 150",
-      "teamSize": "5v5 + 2 suplentes (opcional)",
-      "registrationFees": {
-        "titular": "S/. 5",
-        "suplente": "S/. 2",
-        "requirements": [
-          "Mínimo 2 estudiantes actuales de la Universidad Continental por equipo",
-          "El líder del equipo debe usar correo institucional para el registro",
-          "Los jugadores solo pueden unirse a un equipo y categoría",
-          "Los jugadores individuales pueden unirse a través de Discord"
-        ]
-      },
-      "date": "12 de Julio, 2024",
-      "registrationLink": "#",
-      "rulesLink": "#",
-      "categories": [
-        {
-          "name": "Titanes del Trono",
-          "rank": "Legend, Ancient y Divine",
-          "prize": "S/. 150"
-        },
-        {
-          "name": "Maestros de la Batalla",
-          "rank": "Herald, Guardian, Crusader y Archon",
-          "prize": "S/. 90"
-        }
-      ],
-      "buttons": [
-        { "text": "Registrar", "type": "action", "action": "modal" },
-        { "text": "Bases", "type": "external", "href": "#" }
-      ]
-    },
-
-    {
-      "id": 2,
       "title": "VALORANT",
-      "image": "/imagenes/eventos/valorant.webp",
       "description": "Compite en el ACM Gaming Fest – Valorant y demuestra tu habilidad en un torneo virtual diseñado para la comunidad universitaria. Dos categorías disponibles, premios exclusivos y transmisión en vivo.",
+      "date": "19 de Julio, 2024",
+      "image": "/imagenes/eventos/logo_gamming.png",
+      "location": "Virtual",
+      "registrationLink": "#registro-valorant",
+      "rulesLink": "#bases-valorant",
+      "category": "gaming",
       "prizePool": "5 Pases de Batalla (5175 Valor Points) por categoría, equivalentes a S/. 175",
       "teamSize": "5v5 + 2 suplentes (opcional)",
-      "registrationFees": {
-        "titular": "S/. 5",
-        "suplente": "S/. 2",
-        "requirements": [
-          "Mínimo 2 estudiantes actuales de la Universidad Continental por equipo",
-          "El líder del equipo debe usar correo institucional para el registro",
-          "Los jugadores solo pueden unirse a un equipo y categoría",
-          "Los jugadores individuales pueden unirse a través de Discord"
-        ]
-      },
-      "date": "12 o 19 de Julio, 2024",
-      "registrationLink": "#",
-      "rulesLink": "#",
       "categories": [
         {
           "name": "Junior",
@@ -70,10 +24,51 @@
           "prize": "5 Pases de Batalla (5175 VP) - S/. 175"
         }
       ],
-      "buttons": [
-        { "text": "Registrar", "type": "action", "action": "modal" },
-        { "text": "Bases", "type": "external", "href": "#" }
-      ]
+      "requirements": [
+        "Mínimo 2 estudiantes actuales de la Universidad Continental por equipo",
+        "El líder del equipo debe usar correo institucional para el registro",
+        "Los jugadores solo pueden unirse a un equipo y categoría",
+        "Los jugadores individuales pueden unirse a través de Discord"
+      ],
+      "fees": {
+        "titular": "S/. 5",
+        "suplente": "S/. 2"
+      }
+    },
+    {
+      "id": 2,
+      "title": "DOTA 2",
+      "description": "Compite en dos emocionantes categorías: Maestros de la Batalla y Titanes del Trono en un emocionante torneo de DOTA 2.",
+      "date": "20 de Julio, 2024",
+      "image": "/imagenes/eventos/logo_gamming.png",
+      "location": "Virtual",
+      "registrationLink": "#registro-dota2",
+      "rulesLink": "#bases-dota2",
+      "category": "gaming",
+      "prizePool": "Hasta S/. 150",
+      "teamSize": "5v5 + 2 suplentes (opcional)",
+      "categories": [
+        {
+          "name": "Titanes del Trono",
+          "rank": "Legend, Ancient y Divine",
+          "prize": "S/. 150"
+        },
+        {
+          "name": "Maestros de la Batalla",
+          "rank": "Herald, Guardian, Crusader y Archon",
+          "prize": "S/. 90"
+        }
+      ],
+      "requirements": [
+        "Mínimo 2 estudiantes actuales de la Universidad Continental por equipo",
+        "El líder del equipo debe usar correo institucional para el registro",
+        "Los jugadores solo pueden unirse a un equipo y categoría",
+        "Los jugadores individuales pueden unirse a través de Discord"
+      ],
+      "fees": {
+        "titular": "S/. 5",
+        "suplente": "S/. 2"
+      }
     }
   ]
 }

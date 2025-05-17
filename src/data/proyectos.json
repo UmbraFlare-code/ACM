@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "titulo": "🎸🔥FELIZ DÍA DEL METAL🔥🎸",
+      "titulo": "🎸FELIZ DÍA DEL METAL🎸",
       "descripcion": "Para conmemorar esta fecha legendaria, nuestro líder del Área de Ciencia de Datos creó una página épica. #RetoCalendar ⚔💻",
       "imagen": "/imagenes/proyectos/Rock.webp",
       "tecnologias": ["HTML", "CSS", "Angular", "TypeScript", "Node.js"],
@@ -37,8 +37,32 @@
       ],
       "equipo": [
         {
-          "nombre": "Urquizo Oré, Francis Maxuel",
-          "rol": "Full Stack Developer & UI/UX Designer"
+          "nombre": "Braulio - Lider de Ciencia de datos",
+          "rol": "Data Science Leader"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "🔥FELIZ DÍA DEL INTERNET🔥",
+      "descripcion": "Cada 17 de mayo, millones de personas alrededor del mundo celebran la revolución digital. Este día nos invita a reflexionar sobre el impacto de Internet en nuestras vidas y cómo podemos usarla de manera responsable, segura y equitativa. #RetoCalendar ⚔💻",
+      "imagen": "/imagenes/proyectos/DIA-INTERNET.jpg",
+      "tecnologias": ["HTML", "CSS"],
+      "github": "https://github.com/LogicLab-ACM/dia-del-internet",
+      "demo": "https://logiclab-acm.github.io/dia-del-internet/",
+      "caracteristicas": [
+        "🎨 Usa HTML, CSS para rendirle homenaje y aprender.",
+        "💡 La idea es simple: elegir una fecha significativa y expresarte en la web como desarrollador/a creativo/a.",
+        "⚡ Súmate al reto y comparte tu página con nosotros."
+      ],
+      "equipo": [
+        {
+          "nombre": "Lopez Rodriguez Axel Andre",
+          "rol": ""
+        },
+        {
+          "nombre": "Gilmer Antonny Penidello Gonzales",
+          "rol": ""
         }
       ]
     }

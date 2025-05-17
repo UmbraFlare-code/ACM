@@ -1,5 +1,6 @@
 .schedule {
   position: relative;
+  z-index: var(--z-base);
   height: 100%;
   margin: 3rem auto;
   padding: 0;

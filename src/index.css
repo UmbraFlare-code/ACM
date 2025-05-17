@@ -38,6 +38,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Adjusts scroll position */
+}
+
 body {
   font-family: 'Exo 2', sans-serif;
   background-color: var(--darker);
