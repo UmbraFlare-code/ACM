@@ -22,7 +22,7 @@ const Schedule = () => {
                   <FaClock />
                   <span>{time}</span>
                 </div>
-                <div className="event-content">
+                <div className="event-content-cro">
                   <h4>{title}</h4>
                   <p>{description}</p>
                 </div>

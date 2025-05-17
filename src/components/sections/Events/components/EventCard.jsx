@@ -21,7 +21,7 @@ const EventCard = ({ event, onClick, index }) => (
       </div>
     </div>
     
-    <div className="event-content">
+    <div className="event-content-list">
       <h3>{event.title}</h3>
       <p className="event-description">{event.description}</p>
       <div className="event-meta">
