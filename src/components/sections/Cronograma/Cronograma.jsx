@@ -36,13 +36,11 @@ const Schedule = () => {
   
   return (
     <section id="schedule" className="schedule section">
-      <div className="container">
-        <div className="section-header">
-          <h2>Cronograma de <span className="text-gradient">Eventos</span></h2>
-          <p>{subtitle}</p>
-        </div>
-        {timelineContent}
+      <div className="section-header">
+        <h2>Cronograma de <span className="text-gradient">Eventos</span></h2>
+        <p>{subtitle}</p>
       </div>
+      {timelineContent}
     </section>
   );
 };

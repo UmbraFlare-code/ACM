@@ -44,9 +44,9 @@
     },
     {
       "id": 3,
-      "titulo": "🔥FELIZ DÍA DEL INTERNET🔥",
+      "titulo": "Los Innovadores",
       "descripcion": "Cada 17 de mayo, millones de personas alrededor del mundo celebran la revolución digital. Este día nos invita a reflexionar sobre el impacto de Internet en nuestras vidas y cómo podemos usarla de manera responsable, segura y equitativa. #RetoCalendar ⚔💻",
-      "imagen": "/imagenes/proyectos/DIA-INTERNET.jpg",
+      "imagen": "/imagenes/proyectos/internet.jpg",
       "tecnologias": ["HTML", "CSS"],
       "github": "https://github.com/LogicLab-ACM/dia-del-internet",
       "demo": "https://logiclab-acm.github.io/dia-del-internet/",
@@ -62,6 +62,34 @@
         },
         {
           "nombre": "Gilmer Antonny Penidello Gonzales",
+          "rol": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Tilines Dev",
+      "descripcion": "Cada 17 de mayo, millones de personas alrededor del mundo celebran la revolución digital. Este día nos invita a reflexionar sobre el impacto de Internet en nuestras vidas y cómo podemos usarla de manera responsable, segura y equitativa. #RetoCalendar ⚔💻",
+      "imagen": "/imagenes/proyectos/internet2.jpg",
+      "tecnologias": ["HTML", "CSS"],
+      "github": "",
+      "demo": "https://proyecto-dia-mundial-del-internet.vercel.app",
+      "caracteristicas": [
+        "🎨 Usa HTML, CSS para rendirle homenaje y aprender.",
+        "💡 La idea es simple: elegir una fecha significativa y expresarte en la web como desarrollador/a creativo/a.",
+        "⚡ Súmate al reto y comparte tu página con nosotros."
+      ],
+      "equipo": [
+        {
+          "nombre": "Hans Ordoñes Molinero",
+          "rol": ""
+        },
+        {
+          "nombre": "Fabricio Pahuacho Orihuela",
+          "rol": ""
+        },
+        {
+          "nombre": "Saúl Leon Osoriano",
           "rol": ""
         }
       ]

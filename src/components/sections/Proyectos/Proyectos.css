@@ -1,9 +1,3 @@
-.proyectos-section {
-  position: relative;
-  margin: 3rem 0;
-  overflow: hidden;
-}
-
 .proyectos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

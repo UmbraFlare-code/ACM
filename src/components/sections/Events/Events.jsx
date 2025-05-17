@@ -9,24 +9,22 @@ const Events = () => {
 
   return (
     <section id= "games" className="events-section">
-      <div className="container">
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="section-title"
-        >
-          Próximos Eventos
-        </motion.h2>
-        
-        <div className="events-grid">
-          {filteredEvents.map((event, index) => (
-            <EventCard 
-              key={event.id}
-              event={event}
-              index={index}
-            />
-          ))}
-        </div>
+      <motion.h2 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="section-title"
+      >
+        Próximos Eventos
+      </motion.h2>
+      
+      <div className="events-grid">
+        {filteredEvents.map((event, index) => (
+          <EventCard 
+            key={event.id}
+            event={event}
+            index={index}
+          />
+        ))}
       </div>
     </section>
   );

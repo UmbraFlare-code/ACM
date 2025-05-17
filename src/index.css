@@ -73,13 +73,8 @@ p { margin-bottom: var(--space-md); }
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
-}
-
-.section {
-  padding: var(--space-xl) 0;
 }
 
 .text-gradient {

@@ -32,36 +32,34 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="about section">
-      <div className="container">
-        <div className="section-header">
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
+    <section id="about" className="section">
+      <div className="section-header">
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+      </div>
+
+      <div className="about-content">
+        <div className="about-text">
+          <p>{mainText}</p>
         </div>
 
-        <div className="about-content">
-          <div className="about-text">
-            <p>{mainText}</p>
-          </div>
-
-          <div className="features-grid">
-            {features
-              .map(value => ({ value, sort: Math.random() }))
-              .sort((a, b) => a.sort - b.sort)
-              .map(({ value: feature }, index) => (
-                <div key={index} className="feature-card" style={{
-                  animationDelay: `${index * 0.1}s`
-                }}>
-                  <div className="icon-wrapper">
-                    {getIcon(feature.icon)}
-                  </div>
-                  <div className="feature-content">
-                    <h3>{feature.title}</h3>
-                    <p>{feature.description}</p>
-                  </div>
+        <div className="features-grid">
+          {features
+            .map(value => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value: feature }, index) => (
+              <div key={index} className="feature-card" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
+                <div className="icon-wrapper">
+                  {getIcon(feature.icon)}
                 </div>
-              ))}
-          </div>
+                <div className="feature-content">
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
+              </div>
+            ))}
         </div>
       </div>
     </section>

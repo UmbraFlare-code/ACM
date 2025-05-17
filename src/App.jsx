@@ -47,11 +47,11 @@ function App() {
       <Navbar />
       <main className="container">
         <Hero />
+        <About />
+        <Proyectos />
         <Games />
         <Schedule />
         <Prizes />
-        <Proyectos />
-        <About />
       </main>
       <Footer />
     </div>
