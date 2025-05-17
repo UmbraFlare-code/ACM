@@ -1,11 +1,24 @@
+.proyecto-section {
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0 1rem;
+}
+
 .proyectos-grid {
   display: grid;
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto 0;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
-  margin-top: 3rem;
+  box-sizing: border-box;
 }
 
 .proyecto-card {
+  display: flex;
+  flex-direction: column;
   background: rgba(11, 14, 45, 0.7);
   /* Remove backdrop-filter as it's GPU intensive */
   border: 1px solid rgba(67, 97, 238, 0.3);
@@ -14,8 +27,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .proyecto-card:hover {

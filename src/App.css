@@ -10,14 +10,18 @@ main.container {
   flex-direction: column;
   gap: 8rem;
   margin-bottom: 6rem;
+  box-sizing: border-box;
 }
 
 .app {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
-  background: transparent;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .btn {
